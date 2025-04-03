@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Demo
 // @namespace    http://tampermonkey.net/
-// @version      2023-12-14
+// @version      2025-04-02
 // @description  try to take over the world!
 // @author       Joe Pusateri
 // @match        https://mydashboard.nauto.com/*
