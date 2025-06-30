@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Demo
 // @namespace    http://tampermonkey.net/
-// @version      2025-04-02
+// @version      2025-06-30
 // @description  try to take over the world!
 // @author       Joe Pusateri
 // @match        https://mydashboard.nauto.com/*
@@ -24,12 +24,13 @@
     const tester = jNode.text().match(/^JoeP's Fleet$/);
     if (tester) {
         var classname = jNode.attr("class").split(" ")[3];
-        var indicator = (classname == "eZBzEb" ? "↑" : "↓");
+        var indicator = (classname == "fdHtsR" ? "↑" : "↓");
         jNode.text("Demo:"+indicator+classname);
         console.log(classname);
         return;
-    }
-    if (jNode.attr("class") && jNode.attr("class").match(/eZBzEb/))
+    }//fdHtsR
+
+    if (jNode.attr("class") && jNode.attr("class").match(/fdHtsR/))
     {
       const oldText = jNode.text();
       //console.log("jNode:"+(jNode.text().match(/Superfleet$/)));
